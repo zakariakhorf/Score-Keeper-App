@@ -13,12 +13,12 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-	int i1 = 0;
-	int i2 = 0;
-	int i3 = 0;
-	int i4 = 0;
-	int i5 = 0;
-	int i6 = 0;
+	int goalt2 = 0;
+	int goalt1 = 0;
+	int redcardcount1 = 0;
+	int yellowcardscount1 = 0;
+	int redcardscount2 = 0;
+	int yellowcardscount2 = 0;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -57,53 +57,53 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 		switch (v.getId()) {
 			case R.id.button:
 				TextView score1 = findViewById(R.id.editTextNumber2);
-				i1++;
-				score1.setText(String.valueOf(i1));
+				goalt2++;
+				score1.setText(String.valueOf(goalt2));
 				break;
 			case R.id.button2:
 				TextView score2 = findViewById(R.id.editTextNumber);
-				i2++;
-				score2.setText(String.valueOf(i2));
+				goalt1++;
+				score2.setText(String.valueOf(goalt1));
 				break;
 			case R.id.button3:
-				TextView t3 = findViewById(R.id.editTextNumber2);
-				TextView t4 = findViewById(R.id.editTextNumber);
-				TextView t5 = findViewById(R.id.textView22);
-				TextView t6 = findViewById(R.id.textView7);
-				TextView t7 = findViewById(R.id.textView5);
-				TextView t12 = findViewById(R.id.textView3);
-				i1 = 0;
-				i2 = 0;
-				i3 = 0;
-				i4 = 0;
-				i5 = 0;
-				i6 = 0;
-				t12.setText("0");
-				t5.setText("0");
-				t6.setText("0");
-				t7.setText("0");
-				t4.setText("0");
-				t3.setText("0");
+				TextView scoreteam1 = findViewById(R.id.editTextNumber2);
+				TextView scoreteam2 = findViewById(R.id.editTextNumber);
+				TextView nbredcardsteam1 = findViewById(R.id.textView22);
+				TextView nbyellowcardsteam1 = findViewById(R.id.textView7);
+				TextView nbredcardsteam2 = findViewById(R.id.textView5);
+				TextView nbyellowcardsteam2 = findViewById(R.id.textView3);
+				goalt2 = 0;
+				goalt1 = 0;
+				redcardcount1 = 0;
+				yellowcardscount1 = 0;
+				redcardscount2 = 0;
+				yellowcardscount2 = 0;
+				nbyellowcardsteam2.setText("0");
+				nbredcardsteam1.setText("0");
+				nbyellowcardsteam1.setText("0");
+				nbredcardsteam2.setText("0");
+				scoreteam2.setText("0");
+				scoreteam1.setText("0");
 				break;
 			case R.id.imageButton1:
 				TextView redcard1 = findViewById(R.id.textView22);
-				i3++;
-				redcard1.setText(String.valueOf(i3));
+				redcardcount1++;
+				redcard1.setText(String.valueOf(redcardcount1));
 				break;
 			case R.id.imageButton2:
 				TextView yellowcard1 = findViewById(R.id.textView3);
-				i4++;
-				yellowcard1.setText(String.valueOf(i4));
+				yellowcardscount1++;
+				yellowcard1.setText(String.valueOf(yellowcardscount1));
 				break;
 			case R.id.imageButton3:
 				TextView redcard2 = findViewById(R.id.textView7);
-				i5++;
-				redcard2.setText(String.valueOf(i5));
+				redcardscount2++;
+				redcard2.setText(String.valueOf(redcardscount2));
 				break;
 			case R.id.imageButton4:
 				TextView yellowcard2 = findViewById(R.id.textView5);
-				i6++;
-				yellowcard2.setText(String.valueOf(i6));
+				yellowcardscount2++;
+				yellowcard2.setText(String.valueOf(yellowcardscount2));
 				break;
 			default:
 				break;
